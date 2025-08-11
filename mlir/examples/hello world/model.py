@@ -30,3 +30,7 @@ loss.backward()
 optimizer.step()
 
 print("训练完成，模型输出损失值:", loss.item())
+
+torch.save(model.state_dict(), "model.pth")
+
+print("模型保存成功")
