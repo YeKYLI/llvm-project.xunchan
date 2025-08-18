@@ -1402,12 +1402,6 @@ if( LLVM_INCLUDE_TESTS )
   add_subdirectory(test)
   add_subdirectory(unittests)
 
-  if (WIN32)
-    # This utility is used to prevent crashing tests from calling Dr. Watson on
-    # Windows.
-    add_subdirectory(utils/KillTheDoctor)
-  endif()
-
   umbrella_lit_testsuite_end(check-all)
   get_property(LLVM_ALL_LIT_DEPENDS GLOBAL PROPERTY LLVM_ALL_LIT_DEPENDS)
   get_property(LLVM_ALL_ADDITIONAL_TEST_DEPENDS
