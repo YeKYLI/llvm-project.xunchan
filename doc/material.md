@@ -2,8 +2,7 @@
 
 [LLVM doc](https://llvm.org/docs/)
 
-
-# 教科书
+# Textbook
 
 超标量处理器设计
 
@@ -25,6 +24,10 @@ https://godbolt.org/
 # 网课
 
 [CS143 | Compliers](https://web.stanford.edu/class/cs143/)
+
+# Blog
+
+[LLVM IR 的第一个 Pass：上手官方文档 Hello Pass - CHUNer的文章 - 知乎](https://zhuanlan.zhihu.com/p/392381317)
 
 # CPP
 
