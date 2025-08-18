@@ -1,6 +1,10 @@
 # build
 
 ``` shell
+cd build
+
+rm -rf * -y
+
 cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_PROJECTS=mlir \
    -DLLVM_BUILD_EXAMPLES=ON \
