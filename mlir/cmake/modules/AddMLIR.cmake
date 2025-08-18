@@ -203,24 +203,6 @@ function(add_mlir_interface interface)
   add_dependencies(mlir-generic-headers MLIR${interface}IncGen)
 endfunction()
 
-
-# Generate Documentation
-function(add_mlir_doc doc_filename output_file output_directory command)
-  set(LLVM_TARGET_DEFINITIONS ${doc_filename}.td)
-  # The MLIR docs use Hugo, so we allow Hugo specific features here.
-  tablegen(MLIR ${output_file}.md ${command} -allow-hugo-specific-features ${ARGN})
-  set(GEN_DOC_FILE ${MLIR_BINARY_DIR}/docs/${output_directory}${output_file}.md)
-  add_custom_command(
-          OUTPUT ${GEN_DOC_FILE}
-          COMMAND ${CMAKE_COMMAND} -E copy
-                  ${CMAKE_CURRENT_BINARY_DIR}/${output_file}.md
-                  ${GEN_DOC_FILE}
-          DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/${output_file}.md)
-  add_custom_target(${output_file}DocGen DEPENDS ${GEN_DOC_FILE})
-  set_target_properties(${output_file}DocGen PROPERTIES FOLDER "MLIR/Tablegenning/Docs")
-  add_dependencies(mlir-doc ${output_file}DocGen)
-endfunction()
-
 # Sets ${srcs} to contain the list of additional headers for the target. Extra
 # arguments are included into the list of additional headers.
 function(_set_mlir_additional_headers_as_srcs)

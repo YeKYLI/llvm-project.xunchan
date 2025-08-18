@@ -119,8 +119,6 @@ set_target_properties(mlir-generic-headers PROPERTIES FOLDER "MLIR/Resources")
 add_custom_target(mlir-headers)
 set_target_properties(mlir-headers PROPERTIES FOLDER "MLIR/Resources")
 add_dependencies(mlir-headers mlir-generic-headers)
-add_custom_target(mlir-doc)
-set_target_properties(mlir-doc PROPERTIES FOLDER "MLIR/Docs")
 
 # Only enable execution engine if the native target is available.
 if(${LLVM_NATIVE_ARCH} IN_LIST LLVM_TARGETS_TO_BUILD)
@@ -248,12 +246,6 @@ add_subdirectory(tools)
 
 if( LLVM_INCLUDE_EXAMPLES )
   add_subdirectory(examples)
-endif()
-
-option(MLIR_INCLUDE_DOCS "Generate build targets for the MLIR docs."
-  ${LLVM_INCLUDE_DOCS})
-if (MLIR_INCLUDE_DOCS)
-  add_subdirectory(docs)
 endif()
 
 if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
