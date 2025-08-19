@@ -1414,10 +1414,6 @@ if( LLVM_INCLUDE_TESTS )
   add_dependencies(check-all test-depends)
 endif()
 
-if (LLVM_INCLUDE_DOCS)
-  add_subdirectory(docs)
-endif()
-
 add_subdirectory(cmake/modules)
 
 # Do this last so that all lit targets have already been created.
