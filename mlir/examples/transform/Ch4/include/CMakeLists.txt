@@ -11,4 +11,4 @@ add_public_tablegen_target(MyExtensionCh4IncGen)
 
 # Don't forget to generate the documentation, this will produce a
 # MyExtensionCh4.md under Tutorials/transform
-add_mlir_doc(MyExtension MyExtensionCh4 Tutorials/transform/ -gen-op-doc)
+#add_mlir_doc(MyExtension MyExtensionCh4 Tutorials/transform/ -gen-op-doc)

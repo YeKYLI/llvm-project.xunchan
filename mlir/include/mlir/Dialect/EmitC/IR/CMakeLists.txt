@@ -1,5 +1,5 @@
 add_mlir_dialect(EmitC emitc)
-add_mlir_doc(EmitC EmitC Dialects/ -gen-dialect-doc -dialect emitc)
+#add_mlir_doc(EmitC EmitC Dialects/ -gen-dialect-doc -dialect emitc)
 
 set(LLVM_TARGET_DEFINITIONS EmitCInterfaces.td)
 mlir_tablegen(EmitCInterfaces.h.inc -gen-op-interface-decls)

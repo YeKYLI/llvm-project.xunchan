@@ -1,5 +1,5 @@
 add_mlir_dialect(SparseTensorOps sparse_tensor)
-add_mlir_doc(SparseTensorOps SparseTensorOps Dialects/ -gen-dialect-doc)
+#add_mlir_doc(SparseTensorOps SparseTensorOps Dialects/ -gen-dialect-doc)
 
 set(LLVM_TARGET_DEFINITIONS SparseTensorAttrDefs.td)
 mlir_tablegen(SparseTensorAttrDefs.h.inc -gen-attrdef-decls)

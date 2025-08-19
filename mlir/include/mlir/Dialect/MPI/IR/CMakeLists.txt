@@ -1,5 +1,5 @@
 add_mlir_dialect(MPI mpi)
-add_mlir_doc(MPIOps MPI Dialects/ -gen-dialect-doc)
+#add_mlir_doc(MPIOps MPI Dialects/ -gen-dialect-doc)
 
 # Add MPI operations
 set(LLVM_TARGET_DEFINITIONS MPIOps.td)

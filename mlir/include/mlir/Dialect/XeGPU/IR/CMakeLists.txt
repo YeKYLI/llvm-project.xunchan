@@ -1,5 +1,5 @@
 add_mlir_dialect(XeGPU xegpu)
-add_mlir_doc(XeGPU XeGPU Dialects/ -gen-dialect-doc -dialect=xegpu)
+#add_mlir_doc(XeGPU XeGPU Dialects/ -gen-dialect-doc -dialect=xegpu)
 
 set(LLVM_TARGET_DEFINITIONS XeGPU.td)
 mlir_tablegen(XeGPUAttrs.h.inc -gen-attrdef-decls -attrdefs-dialect=xegpu)

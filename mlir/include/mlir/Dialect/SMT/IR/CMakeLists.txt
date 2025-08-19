@@ -12,4 +12,4 @@ mlir_tablegen(SMTEnums.cpp.inc -gen-enum-defs)
 add_public_tablegen_target(MLIRSMTEnumsIncGen)
 add_dependencies(mlir-headers MLIRSMTEnumsIncGen)
 
-add_mlir_doc(SMT SMT Dialects/ -gen-dialect-doc)
+#add_mlir_doc(SMT SMT Dialects/ -gen-dialect-doc)

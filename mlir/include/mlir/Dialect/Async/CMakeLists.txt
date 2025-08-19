@@ -6,4 +6,4 @@ mlir_tablegen(Passes.capi.h.inc -gen-pass-capi-header --prefix Async)
 mlir_tablegen(Passes.capi.cpp.inc -gen-pass-capi-impl --prefix Async)
 add_public_tablegen_target(MLIRAsyncPassIncGen)
 
-add_mlir_doc(Passes AsyncPasses ./ -gen-pass-doc)
+#add_mlir_doc(Passes AsyncPasses ./ -gen-pass-doc)

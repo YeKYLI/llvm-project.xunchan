@@ -1,5 +1,5 @@
-add_mlir_doc(ShardOps ShardOps Dialects/ -gen-op-doc -dialect=shard)
-add_mlir_doc(ShardOps ShardAttrs Dialects/ -gen-attrdef-doc -dialect=shard)
+#add_mlir_doc(ShardOps ShardOps Dialects/ -gen-op-doc -dialect=shard)
+#add_mlir_doc(ShardOps ShardAttrs Dialects/ -gen-attrdef-doc -dialect=shard)
 
 set(LLVM_TARGET_DEFINITIONS ShardOps.td)
 mlir_tablegen(ShardDialect.cpp.inc -gen-dialect-defs -dialect=shard)

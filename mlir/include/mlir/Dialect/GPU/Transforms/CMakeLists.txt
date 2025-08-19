@@ -4,4 +4,4 @@ mlir_tablegen(Passes.capi.h.inc -gen-pass-capi-header --prefix GPU)
 mlir_tablegen(Passes.capi.cpp.inc -gen-pass-capi-impl --prefix GPU)
 add_public_tablegen_target(MLIRGPUPassIncGen)
 
-add_mlir_doc(Passes GPUPasses ./ -gen-pass-doc)
+#add_mlir_doc(Passes GPUPasses ./ -gen-pass-doc)

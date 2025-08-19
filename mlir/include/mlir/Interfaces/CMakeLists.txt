@@ -37,17 +37,17 @@ mlir_tablegen(DataLayoutTypeInterface.cpp.inc -gen-type-interface-defs)
 add_public_tablegen_target(MLIRDataLayoutInterfacesIncGen)
 add_dependencies(mlir-generic-headers MLIRDataLayoutInterfacesIncGen)
 
-add_mlir_doc(DataLayoutInterfaces
-  DataLayoutAttrInterface
-  Interfaces/
-  -gen-attr-interface-docs)
+#add_mlir_doc(DataLayoutInterfaces
+#  DataLayoutAttrInterface
+#  Interfaces/
+#  -gen-attr-interface-docs)
 
-add_mlir_doc(DataLayoutInterfaces
-  DataLayoutTypeInterface
-  Interfaces/
-  -gen-type-interface-docs)
+#add_mlir_doc(DataLayoutInterfaces
+#  DataLayoutTypeInterface
+#  Interfaces/
+#  -gen-type-interface-docs)
 
-add_mlir_doc(DataLayoutInterfaces
-  DataLayoutOpInterface
-  Interfaces/
-  -gen-op-interface-docs)
+#add_mlir_doc(DataLayoutInterfaces
+#  DataLayoutOpInterface
+#  Interfaces/
+#  -gen-op-interface-docs)

@@ -23,8 +23,8 @@ mlir_tablegen(LLVMIntrinsicOps.h.inc -gen-op-decls)
 mlir_tablegen(LLVMIntrinsicOps.cpp.inc -gen-op-defs)
 add_public_tablegen_target(MLIRLLVMIntrinsicOpsIncGen)
 
-add_mlir_doc(LLVMOps LLVMOps Dialects/ -gen-op-doc)
-add_mlir_doc(LLVMIntrinsicOps LLVMIntrinsicOps Dialects/ -gen-op-doc)
+#add_mlir_doc(LLVMOps LLVMOps Dialects/ -gen-op-doc)
+#add_mlir_doc(LLVMIntrinsicOps LLVMIntrinsicOps Dialects/ -gen-op-doc)
 
 set(LLVM_TARGET_DEFINITIONS LLVMInterfaces.td)
 mlir_tablegen(LLVMInterfaces.h.inc -gen-op-interface-decls)
@@ -61,7 +61,7 @@ add_public_tablegen_target(MLIRNVVMRequiresSMTraitsIncGen)
 add_dependencies(mlir-headers MLIRNVVMRequiresSMTraitsIncGen)
 
 add_mlir_dialect(NVVMOps nvvm)
-add_mlir_doc(NVVMOps NVVMDialect Dialects/ -gen-dialect-doc -dialect=nvvm)
+#add_mlir_doc(NVVMOps NVVMDialect Dialects/ -gen-dialect-doc -dialect=nvvm)
 set(LLVM_TARGET_DEFINITIONS NVVMOps.td)
 mlir_tablegen(NVVMConversions.inc -gen-llvmir-conversions)
 mlir_tablegen(NVVMFromLLVMIRConversions.inc -gen-intr-from-llvmir-conversions)
@@ -73,7 +73,7 @@ mlir_tablegen(NVVMOpsAttributes.cpp.inc -gen-attrdef-defs -attrdefs-dialect=nvvm
 add_public_tablegen_target(MLIRNVVMConversionsIncGen)
 
 add_mlir_dialect(ROCDLOps rocdl)
-add_mlir_doc(ROCDLOps ROCDLDialect Dialects/ -gen-dialect-doc -dialect=rocdl)
+#add_mlir_doc(ROCDLOps ROCDLDialect Dialects/ -gen-dialect-doc -dialect=rocdl)
 set(LLVM_TARGET_DEFINITIONS ROCDLOps.td)
 mlir_tablegen(ROCDLConversions.inc -gen-llvmir-conversions)
 mlir_tablegen(ROCDLOpsAttributes.h.inc -gen-attrdef-decls -attrdefs-dialect=rocdl)
@@ -81,7 +81,7 @@ mlir_tablegen(ROCDLOpsAttributes.cpp.inc -gen-attrdef-defs -attrdefs-dialect=roc
 add_public_tablegen_target(MLIRROCDLConversionsIncGen)
 
 add_mlir_dialect(VCIXOps vcix)
-add_mlir_doc(VCIXOps VCIXDialect Dialects/ -gen-dialect-doc -dialect=vcix)
+#add_mlir_doc(VCIXOps VCIXDialect Dialects/ -gen-dialect-doc -dialect=vcix)
 set(LLVM_TARGET_DEFINITIONS VCIXOps.td)
 mlir_tablegen(VCIXConversions.inc -gen-llvmir-conversions)
 mlir_tablegen(VCIXOpsAttributes.h.inc -gen-attrdef-decls -attrdefs-dialect=vcix)
@@ -89,7 +89,7 @@ mlir_tablegen(VCIXOpsAttributes.cpp.inc -gen-attrdef-defs -attrdefs-dialect=vcix
 add_public_tablegen_target(MLIRVCIXConversionsIncGen)
 
 add_mlir_dialect(XeVMOps xevm)
-add_mlir_doc(XeVMOps XeVMDialect Dialects/ -gen-dialect-doc -dialect=xevm)
+#add_mlir_doc(XeVMOps XeVMDialect Dialects/ -gen-dialect-doc -dialect=xevm)
 set(LLVM_TARGET_DEFINITIONS XeVMOps.td)
 mlir_tablegen(XeVMConversions.inc -gen-llvmir-conversions)
 mlir_tablegen(XeVMOpsEnums.h.inc -gen-enum-decls)

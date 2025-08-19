@@ -7,7 +7,7 @@ mlir_tablegen(UBOpsAttributes.h.inc -gen-attrdef-decls -attrdefs-dialect=ub)
 mlir_tablegen(UBOpsAttributes.cpp.inc -gen-attrdef-defs -attrdefs-dialect=ub)
 add_public_tablegen_target(MLIRUBOpsIncGen)
 
-add_mlir_doc(UBOps UBOps Dialects/ -gen-dialect-doc)
+#add_mlir_doc(UBOps UBOps Dialects/ -gen-dialect-doc)
 
 set(LLVM_TARGET_DEFINITIONS UBOpsInterfaces.td)
 mlir_tablegen(UBOpsInterfaces.h.inc -gen-attr-interface-decls)

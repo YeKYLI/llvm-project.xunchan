@@ -5,4 +5,4 @@ mlir_tablegen(PassesEnums.cpp.inc -gen-enum-defs)
 add_public_tablegen_target(MLIRArmSMETransformsIncGen)
 add_dependencies(mlir-headers MLIRArmSMETransformsIncGen)
 
-add_mlir_doc(Passes ArmSMEPasses ./ -gen-pass-doc)
+#add_mlir_doc(Passes ArmSMEPasses ./ -gen-pass-doc)

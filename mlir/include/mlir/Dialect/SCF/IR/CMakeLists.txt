@@ -1,5 +1,5 @@
 add_mlir_dialect(SCFOps scf Ops)
-add_mlir_doc(SCFOps SCFDialect Dialects/ -gen-dialect-doc)
+#add_mlir_doc(SCFOps SCFDialect Dialects/ -gen-dialect-doc)
 
 set(LLVM_TARGET_DEFINITIONS DeviceMappingInterface.td)
 mlir_tablegen(DeviceMappingAttrInterface.h.inc -gen-attr-interface-decls)
