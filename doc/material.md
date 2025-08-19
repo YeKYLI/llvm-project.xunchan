@@ -32,6 +32,10 @@ https://godbolt.org/
 
 [LLVM IR 的第一个 Pass：上手官方文档 Hello Pass - CHUNer的文章 - 知乎](https://zhuanlan.zhihu.com/p/392381317)
 
+
+[MLIR：新建一个Dialect（十），CMakeLists.txt](https://mp.weixin.qq.com/s/qnG3brRnjFsMWZFegNwtvQ)
+
+
 # CPP
 
 <Effective C++>
